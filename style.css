@@ -70,13 +70,59 @@ main{
     margin-top: 10px;
 }
 .certi-txt{
-    margin-left: 85px;
+    margin-left: 20px;
     margin-top: 24px;
     font-size: 19px;
     font-family: 'Inconsolata', monospace;
     font-family: 'Roboto Mono', monospace;
 }
+#icona{
+    margin-top: 15px;
+    margin-left: 22px;
+    font-size: 45px;
+}
+#iconb{
+    margin-top: 15px;
+    margin-left: 22px;
+    font-size: 45px;
+}
+#iconq{
+    margin-right: 7px;
+    margin-top: 15px;
+    margin-left: 28px;
+    font-size: 45px;
+}
+#icond{
+    transform: rotate(270deg);
+    margin-right: -10px;
+    margin-top: -5px;
+    margin-left: 38px;
+    font-size: 45px;
+}
+#iconc{
+    margin-right: 0px;
+    margin-top: 15px;
+    margin-left: 25px;
+    font-size: 45px;
+}
+#iconm{
+    margin-right: 0px;
+    margin-top: 15px;
+    margin-left: 25px;
+    font-size: 40px;
+}
+#icon{
+    margin-top: 9px;
+    margin-left: 22px;
+    font-size: 55px;
+}
+.certificate:hover > i {
+    size: 100px;
+    color: rgb(63, 64, 85);
+
+}
 .certificate{
+    display: flex;
     color: white;
     border: solid;
     border-color: rgb(255, 255, 255);
@@ -139,4 +185,10 @@ main{
 #search-section:focus{
     outline: none;
     
+}
+
+@media (max-width: 800px){
+    body{
+        background-color: red;
+    }
 }
