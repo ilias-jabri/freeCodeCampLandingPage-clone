@@ -195,6 +195,9 @@ main{
     outline: none;
     
 }
+a{
+    text-decoration: none;
+}
 
 @media (max-width: 1000px){
 
