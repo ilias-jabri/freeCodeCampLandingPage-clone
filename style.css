@@ -12,17 +12,16 @@ body{
 nav{
     background-color: rgb(3, 7, 37);
     width: 100%;
-    height: 42px;
+    height: 40px;
     display: grid;
     grid-template-columns: repeat(10,1fr);
 }
 #logo{
     position: absolute;
-    left: 43%;
-    padding-left: 10px;
+    left: 50%;
+    transform: translate(-100px);
     padding-top: 5px;
     background-color: transparent;
-    grid-column: 5/6;
     color: rgb(255, 255, 255);
     font-size: 24px;
     font-family: 'Inconsolata', monospace;
@@ -167,28 +166,74 @@ main{
     color: white;
     background-color: transparent;
 }
+
+#s-icon{
+    color: white;
+    position: absolute;
+    background-color: transparent;
+    left: 40px;
+    top: 13px;
+}
+#search-div{
+
+}
 #search-section{
-    
     border: none;
-    padding: 0px;
+    padding-left: 40px;
     font-weight: 100;
     font-family: 'Inconsolata', monospace;
     font-family: 'Roboto Mono', monospace;
-    font-size: 20px;
+    font-size: 15px;
     color: rgb(255, 255, 255);
     margin-left: 30px;
     background-color: rgb(78, 81, 105);
     margin-top: 7px;
-    height: 70%;
-    width: 450px;
+    height: 60%;
+    width: 25vw;
 }
 #search-section:focus{
     outline: none;
     
 }
 
-@media (max-width: 800px){
+@media (max-width: 1000px){
+
+    #search-div{
+        visibility: hidden;
+    }
+    #logo{
+        top: -2px;
+        left: 10px;
+        transform: translate(0px);
+    }
+}
+@media (max-width: 600px){
+
+    #logo{
+        font-size: 18px;
+        top: -4px;
+        left: 10px;
+        transform: translate(0px);
+    }
     body{
         background-color: red;
     }
+    #Profile-btn{
+        visibility: hidden;
+    }
+    #Menu-btn{
+        transform: scale(0.9);
+        margin: 0px;
+
+    }
+    #left-nav{
+        
+        right: 0px;
+        top: 0px;
+        position: absolute;
+        grid-column: 10/11;
+        background-color: transparent;
+        display: flex;
+    }
+
 }
