@@ -149,6 +149,7 @@ main{
 
 }
 #text{
+    height: 300px;
     margin-top: 0px;
     margin-bottom: 10px;
 }
@@ -173,9 +174,7 @@ main{
     background-color: transparent;
     left: 40px;
     top: 13px;
-}
-#search-div{
-
+    transition: 0.2s;
 }
 #search-section{
     border: none;
